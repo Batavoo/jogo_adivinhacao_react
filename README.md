@@ -1,69 +1,71 @@
-# React + TypeScript + Vite
+# Adivinhe! - Jogo de Adivinhação de Palavras
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Word Guessing Game](./src/assets/app.png)
 
-Currently, two official plugins are available:
+Este é um simples jogo de adivinhação de palavras construído com React, TypeScript e Vite. O objetivo do jogo é adivinhar a palavra secreta, que está relacionada a tecnologias de desenvolvimento web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- **Palavras Aleatórias**: A cada novo jogo, uma palavra é selecionada aleatoriamente de uma lista predefinida.
+- **Dicas**: Cada palavra vem com uma dica para ajudar o jogador.
+- **Feedback Visual**: As letras utilizadas são exibidas, com cores diferentes para acertos e erros.
+- **Contador de Tentativas**: O jogador tem um número limitado de tentativas para adivinhar a palavra.
+- **Reiniciar Jogo**: É possível reiniciar o jogo a qualquer momento.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias Utilizadas
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **[React](https://react.dev/)**: Biblioteca para construir a interface do usuário.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
+- **[Vite](https://vitejs.dev/)**: Ferramenta de build moderna e rápida para desenvolvimento web.
+- **CSS Modules**: Para estilização local e componentizada.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🏁 Como Executar o Projeto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Siga os passos abaixo para executar o projeto em seu ambiente de desenvolvimento.
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [npm](https://www.npmjs.com/) ou outro gerenciador de pacotes (yarn, pnpm)
+
+### Instalação e Execução
+
+1.  Clone o repositório:
+    ```sh
+    git clone <URL_DO_REPOSITORIO>
+    ```
+2.  Navegue até o diretório do projeto:
+    ```sh
+    cd jogo_adivinhacao
+    ```
+3.  Instale as dependências:
+    ```sh
+    npm install
+    ```
+4.  Inicie o servidor de desenvolvimento:
+    ```sh
+    npm run dev
+    ```
+5.  Abra seu navegador e acesse `http://localhost:5173` (ou a porta indicada no terminal).
+
+## 📂 Estrutura do Projeto
+
+O código-fonte está localizado na pasta `src/` e segue a seguinte estrutura:
+
+```
+src/
+├── assets/         # Imagens e ícones estáticos
+├── components/     # Componentes React reutilizáveis
+├── utils/          # Funções e dados utilitários (ex: lista de palavras)
+├── App.tsx         # Componente principal da aplicação com a lógica do jogo
+├── main.tsx        # Ponto de entrada da aplicação React
+└── global.css      # Estilos globais
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is for educational and demonstration purposes.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+<p align="center">Made with ❤️ by <a href="https://www.linkedin.com/in/gustavo-santos-744549234/">Gustavo Arruda</a></p>
