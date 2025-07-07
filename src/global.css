@@ -12,7 +12,11 @@ body {
   background-color: #f5f5fa;
 
   font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
+}
+
+input,
+button {
+  font-family: "Noto Sans", sans-serif;
 }
 
 button {
@@ -22,4 +26,10 @@ button {
 
 button:hover {
   filter: brightness(0.9);
+}
+
+h4 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.125rem;
+  color: #32325f;
 }
