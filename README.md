@@ -32,7 +32,7 @@ Siga os passos abaixo para executar o projeto em seu ambiente de desenvolvimento
 
 1.  Clone o repositório:
     ```sh
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/Batavoo/jogo_adivinhacao_react
     ```
 2.  Navegue até o diretório do projeto:
     ```sh
